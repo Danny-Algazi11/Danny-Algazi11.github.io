@@ -1,0 +1,90 @@
+:root {
+  /* surfaces */
+  --surface: #0f131d;
+  --surface-lowest: #0a0e18;
+  --surface-low: #171b26;
+  --surface-container: #1c1f2a;
+  --surface-high: #262a35;
+  --surface-highest: #313540;
+
+  /* text */
+  --on-surface: #dfe2f1;
+  --on-surface-variant: #9aa3b8;
+  --outline: #4b5563;
+
+  /* accents */
+  --primary: #4edea3;
+  --primary-strong: #10b981;
+  --on-primary: #003824;
+  --secondary: #4cd7f6;
+  --secondary-strong: #06b6d4;
+
+  /* type */
+  --font-display: 'Space Grotesk', system-ui, sans-serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, Consolas, monospace;
+
+  /* layout */
+  --max-width: 1120px;
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+
+  color-scheme: dark;
+  background: var(--surface);
+  color: var(--on-surface);
+  font-family: var(--font-body);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--surface);
+  overflow-x: hidden;
+}
+
+#root {
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-display);
+  color: var(--on-surface);
+  margin: 0;
+  letter-spacing: -0.02em;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+code {
+  font-family: var(--font-mono);
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+::selection {
+  background: rgba(78, 222, 163, 0.25);
+}
