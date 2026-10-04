@@ -1,2 +1,4 @@
 User-agent: *
 Allow: /
+
+Sitemap: https://danny-algazi11.github.io/sitemap.xml
